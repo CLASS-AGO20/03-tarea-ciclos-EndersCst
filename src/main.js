@@ -93,7 +93,8 @@ console.log(app.sumatoriaSerieDos(9));
 console.log(app.esPrimo(3));
 console.log(app.esPrimo(4));
 
-console.log(app.obtenerMultiplos());
+
+console.log(app.obtenerMultiplos(1,10));
 
 
-console.log(app.obtenerImpares());
+console.log(app.obtenerImpares(6,5));

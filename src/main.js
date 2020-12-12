@@ -34,17 +34,21 @@ sumatoriaSerieDos(numero) {
 }
 //ejercicio3
 esPrimo(numero){
-    let i = 2;
+    let i = numero;
+    let primo = 0;
+    let a = numero;
 
     do{
-        if(numero%i==0){
-            return false;
-        } else{
-            return true;
+        if(a%i == 0){
+            primo++;
         }
-        i++;
-    }while(i<numero);
-
+        i--;
+    } while (i >=1);
+    if(prim ==2){
+        return true;
+    } else {
+        return false;
+    }
 
 }
 //ejercicio4
@@ -69,10 +73,10 @@ if(numero2 > numero1){
     numero2 = t;
 }
 for(let i = numero1; i >= numero2; i--){
-    if(i%2 !=0){
+    if(i % 2 !=0){
         if(imp == 0){
             imp = imp + 1;
-            imp =imp.toString();
+            imp = imp.toString();
         }else {
             imp = imp + "," + i;
             imp = imp.toString();
@@ -98,3 +102,4 @@ console.log(app.obtenerMultiplos(1,10));
 
 
 console.log(app.obtenerImpares(6,5));
+

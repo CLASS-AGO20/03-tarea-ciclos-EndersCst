@@ -43,8 +43,9 @@ esPrimo(numero){
         i++;
     } while (i<=(numero-1));
     if(numero>0 && numero !==0){
-        return false;
+       
     } 
+    return false;
     }
 
 

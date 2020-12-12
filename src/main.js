@@ -43,19 +43,25 @@ esPrimo(numero){
         i++;
     } while (i<=(numero-1));
     if(numero>0 && numero !==0){
-        return true;
-    } else {
         return false;
+    } 
     }
 
-}
+
 //ejercicio4
 obtenerMultiplos(inicio, fin){
-    let i = inicio;
-    let multiplo;
-
+    if(inicio>fin){
+        t=inicio;
+        fin=inicio;
+        fin=t;
+    }
+let suma=0
     do{
-        if(i)
+        if(inicio%3==0){
+            suma=suma+inicio;
+            suma=suma.toString(10);
+        }
+        
         console.log("")
     }
     while(i)

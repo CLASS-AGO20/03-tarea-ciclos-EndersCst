@@ -40,9 +40,9 @@ esPrimo(numero){
         if(numero%i === 0){
             return;
         }
-        i--;
-    } while (i >=1);
-    if(primo ==2){
+        i++;
+    } while (i<=(numero-1));
+    if(numero>0 && numero !==0){
         return true;
     } else {
         return false;

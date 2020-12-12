@@ -4,9 +4,9 @@ sumatoriaSerieUno(numero) {
     let suma = 0; 
 
 //expresiónInicial //expresiónCondicional //expresiónDeCondicional
-    for(let i = 1; i <= numero; i = i + 1){
+    for(let i = 1; i <= numero; i++){
         
-            suma = suma + 1/i;             //instruccion
+            suma = suma + (1/i);             //instruccion
             
         }
 
@@ -22,25 +22,23 @@ sumatoriaSerieDos(numero) {
     
     while (i<=numero) {
          if (i%2 === 0){
-             suma = suma + 1/i;
+             suma = suma + (1/i);
         }else {
-            suma = suma -1/i;  // todos los pares se van a sumar y todos los impares se restan
+            suma = suma - (1/i);  // todos los pares se van a sumar y todos los impares se restan
         }
 
-        i = i + 1 ;
+        i++;
     
     }
     return suma;
 }
 //ejercicio3
 esPrimo(numero){
-    let i = numero;
-    let primo = 0;
-    let a = numero;
-
+    let i = 2;
+    
     do{
-        if(a%i == 0){
-            primo++;
+        if(numero%i === 0){
+            return;
         }
         i--;
     } while (i >=1);

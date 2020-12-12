@@ -61,7 +61,7 @@ let suma=0
             suma=suma+inicio;
             suma=suma.toString(10);
         }
-        
+
         console.log("")
     }
     while(i)
@@ -69,16 +69,15 @@ let suma=0
 let 
 //ejercicio5
 obtenerImpares(numero1, numero2){
-let t;
-let imp = 0;
+let t =0;
 if(numero2 > numero1){
     t = numero1;
     numero1 = numero2;
     numero2 = t;
 }
 for(let i = numero1; i >= numero2; i--){
-    if(i % 2 !=0){
-        if(imp == 0){
+    if(i % 2 !==0){
+        if(imp === 0){
             imp = imp + 1;
             imp = imp.toString();
         }else {

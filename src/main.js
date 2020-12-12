@@ -44,7 +44,7 @@ esPrimo(numero){
         }
         i--;
     } while (i >=1);
-    if(prim ==2){
+    if(primo ==2){
         return true;
     } else {
         return false;
